@@ -10,6 +10,7 @@ class Admin::ProductsController < ApplicationController
 
   def new
     @product = Product.new
+    @photo = @product.photos.build #for multi-pics
   end
 
   def edit
@@ -30,6 +31,12 @@ class Admin::ProductsController < ApplicationController
     @product = Product.new(product_params)
 
     if @product.save
+      if params[:photos] != nil
+        params[:photos]['avatar'].each do |a|
+          @photo = @product.photos.create(:avatar => a)
+        end
+      end
+
       redirect_to admin_products_path
     else
       render :new

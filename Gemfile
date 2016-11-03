@@ -40,6 +40,8 @@ gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'fog'
 gem 'roadie-rails', '~> 1.0'
+gem 'premailer', '~> 1.8', '>= 1.8.7'
+gem 'roadie'
 
 
 group :development, :test do

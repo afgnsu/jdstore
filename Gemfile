@@ -40,6 +40,8 @@ gem 'roadie'
 gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'fog'
+gem "roadie", "~>2.4.3"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

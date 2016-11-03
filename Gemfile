@@ -36,11 +36,10 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'roadie'
 gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'fog'
-gem "roadie", "~>2.4.3"
+gem 'roadie-rails', '~> 1.0'
 
 
 group :development, :test do
